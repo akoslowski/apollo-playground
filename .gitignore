@@ -84,6 +84,9 @@ xcuserdata
 
 # End of https://www.gitignore.io/api/swift,swiftpm,swiftpackagemanager
 
+# macos
+.DS_Store
+
 # Apollo CLI should be compiled with "swift package --allow-writing-to-package-directory apollo-cli-install"
 apollo-ios-cli
 

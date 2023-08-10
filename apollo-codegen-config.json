@@ -1,5 +1,5 @@
 {
-  "schemaNamespace" : "VastRaven",
+  "schemaNamespace" : "StarWars",
   "input" : {
     "operationSearchPaths" : [
       "**/*.graphql"
@@ -29,9 +29,11 @@
       }
     },
     "schemaTypes" : {
-      "path" : "./VastRaven",
+      "path" : "./VastRaven.playground/Sources/Generated",
       "moduleType" : {
-        "swiftPackageManager" : {
+        "embeddedInTarget" : {
+          "name" : "StarWars",
+          "accessModifier": "public"
         }
       }
     },

@@ -1,0 +1,14 @@
+query ListPeople1 {
+  allPeople(first: 3) {
+    people {
+      name
+      filmConnection(first: 3) {
+        films {
+          id
+          title
+          releaseDate
+        }
+      }
+    }
+  }
+}
