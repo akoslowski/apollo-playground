@@ -10,7 +10,6 @@ let cancellable = client.fetch(query: query) { result in
     do {
         
         let graphqlResult = try result.get()
-
         let data = try graphqlResult.data ?? { throw URLError(.badServerResponse) }()
         let people = data.allPeople?.people?.compactMap { $0 } ?? []
 
