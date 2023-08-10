@@ -6,7 +6,7 @@ let query = StarWars.ListPeople1Query()
 let endpoint = URL(string: "https://swapi-graphql.netlify.app/.netlify/functions/index")!
 let client = ApolloClient(url: endpoint)
 
-client.fetch(query: query) { result in
+let cancellable = client.fetch(query: query) { result in
     do {
         
         let graphqlResult = try result.get()
